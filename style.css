@@ -1,0 +1,295 @@
+
+/* **************  POUR SMARTPHONE  ********************* */
+@media screen and (max-width:767.99px){
+
+	body{
+		margin:0;
+		padding: 0;
+		font-size: 12px;
+		font-family: corbel, sans-serif;
+		background-color: orange;
+	}
+	.container{
+		width: 100%;
+		min-height: 400px;
+		background-color: black;
+		margin: 0 auto;
+	}
+
+	header{
+		min-height: 200px;
+		background-color: grey;
+    background-image: url("img/acceuilParimis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+	}
+	.containerMain{
+		min-height: 400px;
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+  }
+  ul{
+    padding-left: 0px;
+    margin:0;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 16px;
+    background: #7a0116;
+    vertical-align: middle;
+    line-height: 100px;
+  }
+
+	footer{
+		min-height: 200px;
+		background-color: black;
+
+	}
+
+	aside{
+		width: 100%;
+		min-height: 400px;
+		background-color: #cccccc;
+	}
+	.col2{
+		background-color: #fff;
+		width: 100%;
+		min-height: 400px;
+		order: 1;
+	}
+.col1{  order: 3;}
+.col3{  order: 2;}
+
+
+	article{ margin: 30px;}
+
+
+}
+/* **************  POUR TABLETTE  ********************* */
+@media (min-width: 768px) and (max-width:991.99px){
+	body{
+		margin:0;
+		padding: 0;
+		font-size: 12px;
+		font-family: corbel, sans-serif;
+		background-color: green;
+	}
+
+
+}
+
+/* **************  POUR ECRAN  ********************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------*/
+
+@media screen and (min-width: 992px){
+
+html{
+  min-width: auto;
+  min-height: auto;
+}
+body{
+  width: 1920px;
+  margin:0;
+  background: darkgrey;
+}
+.page{
+  margin: 0 ;
+  background-color: darkgrey;
+}
+
+header{
+  height: 800px;
+  min-width: 1920px;
+  background-image: url("img/acceuilParimis.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*mettre le logo et le menu burger a gauche  et reservation a droite*/
+}
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: fira-sans,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.acceuilParimis{
+  min-width: 1920px;
+  height: 115px;
+
+}
+.containerNav{
+  width: 375px;
+  height: 115px;
+}
+.containerNav2{
+  background-color:#9e1d36;
+  width:354px;
+  height: 115px;
+  text-align: right;
+  color:;
+  font-size: 1.5em;
+}
+.containerNav2:hover{
+  background-color: #ff0031;
+}
+#reservation{
+  padding-right: 40px;
+}
+h1{
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 4em;
+}
+p{
+  font-family: fira-sans,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+ul{
+  padding-left: 0px;
+  margin:0;
+  width:614 ;
+  height: 115px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 16px;
+  background: #7a0116;
+  vertical-align: middle;
+  line-height: 115px;
+}
+li{
+  padding-left: 35px;
+  padding-right: 35px ;
+  margin: 0;
+  background: #7a0116
+}
+li:hover{
+  background-color: #4e0111;
+}
+.containerMain{
+  background-color: white;
+  height: 800px;
+  width: 1920px;
+  margin: 30px 190px 20px 190px;
+}
+.fond{
+  background-image: url("img/chambre-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  min-width: 1920px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px  ;
+
+}
+footer{
+  background: black;
+  height: 800px;
+  width: 1920px;
+}
+h2{
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5em;
+  margin: 0;
+}
+h3{
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5em;
+  margin: 0;
+  /*padding: 30px 190px 20px 190px;*/
+  text-align: center;
+}
+h1,p{
+
+  margin: 0;
+  padding: 30px 190px 20px 190px;
+}
+img{
+  padding: 0px 190px 0px 190px;
+}
+.fondP{
+  margin: 0;
+  padding: 0px 300px 0px 300px;
+}
+#deuxDiv{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+#fondD{
+  height: 60px;
+  width: 210px;
+  background-color: #7a0116;
+  line-height: 60px;
+  vertical-align:middle;
+}
+#fondD:hover{
+  background-color: #4e0111;
+}
+#fondDbis{
+  line-height: 60px;
+  vertical-align:middle;
+  height: 60px;
+  width: 210px;
+  color: black;
+  background-color: white;
+}
+#fondDbis:hover{
+  background-color: grey;
+}
+#img1{
+  margin:0px 190px 0px 190px;
+  height: 502px;
+  min-width: 900px;
+  background-color: black;
+
+}
+#img2{
+  float: left;
+  height: 600px;
+  width: 400px;
+
+}
+
+span{color:#7a0116;
+
+}
+}

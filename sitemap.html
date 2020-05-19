@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="img/P.gif">
+  <title>Document</title>
+  <style media="screen">
+    .close-icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      position: absolute;
+    }
+    .close-icon:hover{
+      transform: translateY(-4px);
+      box-shadow: 0px 10px 30px -14px #000;
+    }
+    .close-icon:active {
+      top: 3px;
+      right: -3px;
+      box-shadow: 0px 8px 30px -14px #000;
+    }
+    .close-icon span {
+      display: inline-flex;
+      width: 3px;
+      height: 33px;
+      border-radius: 3px;
+      background: #ccc;
+      position: absolute;
+      /* Center Position Absolute V & H */
+      /*ABSOLUTE CENTERING ONLY REQUIRES A DECLARED HEIGHT*/
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      /* Center Position Absolute V & H */
+      transform: rotate(-45deg);
+    }
+    .close-icon span:last-child {
+     transform: rotate(45deg);
+   }
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Quicksand);
+body {
+  background: #292426;
+  font-family: 'Open Sans', sans-serif;
+  color: #4d4e4c;
+}
+
+h1 {
+  font-weight: normal;
+  line-height: 1.1;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #fff;
+}
+
+.container {
+  width: 850px;
+  margin: 20px auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sitemap {
+  width: 692px;
+  margin: 50px auto;
+}
+.sitemap a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 5px;
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+}
+
+.first > li > a {
+  background: #b4b5b4;
+  width: 150px;
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  margin: auto;
+}
+.first > li > a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 10px;
+  background: #9e9f9e;
+  top: 100%;
+}
+
+.second {
+  padding-top: 20px;
+}
+.second > li {
+  display: inline-block;
+  vertical-align: top;
+}
+.second a {
+  background: #cbcccb;
+  font-size: 14px;
+  width: 125px;
+  height: 50px;
+  line-height: 50px;
+  z-index: 10;
+}
+.second a:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #9e9f9e;
+  border-left: none;
+  border-bottom: none;
+  height: 9px;
+  top: -10px;
+  left: -76px;
+  width: 139px;
+}
+.second li:first-child a:before {
+  border-top: none;
+}
+
+.third {
+  margin-left: 16px;
+  padding-top: 20px;
+}
+.third a {
+  background: #e4e4e3;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  z-index: 5;
+  font-size: 10px;
+}
+.third a:before {
+  border: 1px solid #9e9f9e;
+  border-right: none;
+  border-top: none;
+  height: 55px;
+  top: -35px;
+  left: -8px;
+  width: 7px;
+}
+h1{
+   text-align:center;
+}
+.retour{
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  border: 0;
+  background-color: rgba(146,39,143,0.6);
+  box-shadow: rgba(0, 0, 0, 0.3) 0em 0.5em 0.5em;
+  color: white
+;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <form>
+      <input type="button" value="Retour" onclick="history.go(-1)" class="retour">
+    </form>
+  </header>
+  <main>
+    <div class="container">
+      <h1> site map</h1>
+      <nav class="sitemap">
+        <ul class="first">
+          <li><a href="index.html">Acceuil</a>
+            <ul class="second">
+              <li><a href="chambres/presentation.html">Chambres</a>
+                <ul class="third">
+                  <li><a href="chambres/presentation.html#classique">classique</a></li>
+                  <li><a href="chambres/presentation.html#confort">confort</a></li>
+                  <li><a href="chambres/presentation.html#deluxe"> Deluxe</a></li>
+                  <li><a href="chambres/presentation.html#suite">Suite</a></li>
+                </ul>
+              </li>
+              <li><a href="restaurant/presentation.html">restaurant</a>
+                <ul class="third">
+                  <li><a href="restaurant/presentation.html#carte">Carte</a></li>
+                </ul>
+              </li>
+              <li><a href="spa/presentation.html">Spa</a>
+                <ul class="third">
+                  <li><a href="spa/presentation.html#soin1">1er soin</a></li>
+                  <li><a href="spa/presentation.html#soin2">2eme soins</a></li>
+                  <li><a href="spa/presentation.html#soin3">3eme soins</a></li>
+                  <li><a href="spa/presentation.html#soin4">4eme soins</a></li>
+                </ul>
+              </li>
+              <li><a href="reservation.html">reservation</a>
+                <ul class="third">
+                  <li><a href="#">Avis</a></li>
+                  <li><a href="recrutement.html">Recrutement</a></li>
+                </ul>
+
+              </li>
+              <li><a href="contact/contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <footer></footer>
+
+</body>
+</html>

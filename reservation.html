@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reservation.css">
+  <link rel="jQuery" href="https://code.jquery.com/jquery-3.3.1.min.js">
+  <title>reservation</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <form class="quick-reservation">
+
+<div class="container">
+   <header class="quick-reservation__header">
+      <h2 class="title">
+         reservation
+      </h2>
+      <a href="javascript:history.go(-1)">
+        <div class="close-icon">
+         <span></span>
+         <span></span>
+        </div>
+      </a>
+   </header>
+
+   <div class="quick-reservation__form">
+      <section class="form__content">
+         <div class="row-wrapper">
+            <div class="ele adults">
+               <label for="adults">Adultes</label>
+               <select name="adults" id="adults">
+                  <option value="hide">Adultes</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+               </select>
+            </div>
+            <div class="ele children">
+               <label for="children">Enfants</label>
+               <select name="children" id="children">
+                  <option value="hide">Enfants</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+               </select>
+            </div>
+            <div class="ele rate-type">
+               <label for="rateType">Votre Choix</label>
+               <select name="rateType" id="rateType">
+                  <option value="hide">Hotel</option>
+                  <option value="">Restaurant</option>
+                  <option value="">Spa</option>
+                  <option value="">Toute Options</option>
+               </select>
+            </div>
+            <div class="ele rooms">
+               <label for="Rooms">Chambres</label>
+               <select name="rooms" id="Rooms">
+                  <option value="hide">Chambres</option>
+                  <option value="">Classique</option>
+                  <option value="">Confort</option>
+                  <option value="">Deluxe</option>
+                  <option value="">Suite</option>
+
+               </select>
+            </div>
+            <div class="ele rooms">
+               <label for="Restaurant">Restaurant</label>
+               <select name="rooms" id="Rooms">
+                  <option value="hide">Aucun</option>
+                  <option value="">Menu Brasserie </option>
+                  <option value="">Menu Dégustation </option>
+                  <option value="">Menu Restaurant </option>
+               </select>
+            </div>
+            <div class="ele rooms">
+               <label for="Rooms">Spa</label>
+               <select name="rooms" id="Rooms">
+                  <option value="hide">Aucun</option>
+                  <option value="">ESCAPADE À LA GACILLY</option>
+                  <option value="">ÉVASION AFRICAINE</option>
+                  <option value="">ÉVASION JEUNESSE</option>
+                  <option value="">SOIN APAISANT</option>
+
+               </select>
+            </div>
+         </div>
+         <div class="row-wrapper">
+            <div class="ele adults">
+               <label for="title">Titre</label>
+               <select name="title" id="title">
+                  <option value="hide">Titre</option>
+                  <option value="">Mr.</option>
+                  <option value="">Mrs.</option>
+               </select>
+            </div>
+            <div class="ele first-name">
+               <label for="firstName">Prénom</label>
+               <input type="text" value="" placeholder="Prénom" id="firstName">
+            </div>
+            <div class="ele last-name">
+               <label for="lastName">Nom de Famille</label>
+               <input type="text" value="" placeholder="Nom" id="lastName">
+            </div>
+         </div>
+         <div class="row-wrapper">
+            <div class="ele email-address">
+               <label for="emailAddress"> Addresse Email</label>
+               <input type="email" value="" placeholder="Votre Email" id="emailAddress">
+            </div>
+            <div class="ele phone-number">
+               <label for="phoneNumber">Numero de téléphone</label>
+               <input type="text" value="" placeholder="Numéros de téléphone" id="phoneNumber">
+            </div>
+
+         </div>
+
+         <div class="row-wrapper more-options">
+
+            <label for="single" class="radio">
+               <input type="radio" name="plan" id="single" class="hidden"/>
+               <span class="label"></span>Seul
+            </label>
+
+            <label for="group" class="radio">
+               <input type="radio" name="plan" id="group" class="hidden"/>
+               <span class="label"></span>Groupe
+            </label>
+
+            <label for="business" class="radio">
+               <input type="radio" name="plan" id="business" class="hidden"/>
+               <span class="label"></span>Business
+            </label>
+
+         </div>
+
+      </section>
+   </div>
+
+
+   <div class="reservation-info">
+      <div class="ele data">
+         <h4 class="data__head">Type de chambre</h4>
+         <p class="data__description">Deluxe</p>
+      </div>
+      <div class="ele data">
+         <h4 class="data__head">Durée</h4>
+         <p class="data__description">Mai 28 - Juin 02</p>
+      </div>
+      <div class="ele data">
+         <h4 class="data__head">Prix</h4>
+         <p class="data__description">€265/nuits<br> Total €470</p>
+      </div>
+   </div>
+
+   <footer class="form__footer">
+      <div class="footer-wrapper">
+         
+         <input type="submit" value="Reserver" class="">
+         <input type="button" value="Achat" class="">
+      </div>
+   </footer>
+</div>
+
+</form>
+
+
+
+
+  </main>
+  <footer></footer>
+
+</body>
+<script type="text/javascript">
+  $('select').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+    $this.addClass('select-hidden');
+    $this.wrap('<div class="select"></div>');
+    $this.after('<div class="select-styled"></div>');
+
+    var $styledSelect = $this.next('div.select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+
+    var $list = $('<ul />', {
+        'class': 'select-options'
+    }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.select-styled.active').not(this).each(function(){
+            $(this).removeClass('active').next('ul.select-options').hide();
+        });
+        $(this).toggleClass('active').next('ul.select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        //console.log($this.val());
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('active');
+        $list.hide();
+    });
+
+});
+
+$(function() {
+   $('.quick-reservation').hide();
+   $('.quick-reservation').fadeIn(1000);
+   $('.close-icon').click(function (e) {
+      $('.quick-reservation').fadeOut(500);
+      e.stopPropagation();
+      $('.after').show(1000);
+      e.stopPropagation();
+   });
+});
+
+</script>
+</html>
